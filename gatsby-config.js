@@ -5,11 +5,16 @@
  */
 
 module.exports = {
-  /* Your site config here */
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        icon: "static/favicon.png",
+      },
+    },
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
