@@ -25,6 +25,16 @@ const Projects = () => {
             An online radio mobile app built with Expo/React Native
           </p>
         </div>
+        <div className="col-span-2">
+          <p className="font-semibold">
+            <Link to="/projects/kbd-synth" className="sangiovese-line">
+              Kbd-Synth
+            </Link>
+          </p>
+          <p className="text-darkgrey font-medium">
+            A granular piano synth for your browser
+          </p>
+        </div>
       </div>
     </Layout>
   )
