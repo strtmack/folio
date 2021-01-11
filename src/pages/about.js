@@ -31,7 +31,7 @@ const About = () => {
           <Menu />
         </div>
       </div>
-      <div className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-lg font-medium">
+      <div className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-base font-medium">
         <div className="col-span-3">
           <p className="mb-6">My name is Stuart Mackinnon.</p>
           <p className="mb-6">
