@@ -10,7 +10,8 @@ export default function Home() {
         <div className="grid col-span-4">
           <h1 className="text-2xl font-medium">
             <span className="text-royal font-semibold">Stuart Mackinnon</span>{" "}
-            is a software developer from Melbourne, Australia.
+            is a software developer
+            <br /> from Melbourne, Australia.
           </h1>
         </div>
         <div className="grid col-span-2">
