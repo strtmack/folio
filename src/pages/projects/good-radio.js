@@ -48,13 +48,13 @@ const GoodRadio = () => {
     <Layout>
       <section className="grid grid-cols-6 gap-x-24 mx-12 p-12">
         <div className="grid col-span-4">
-          <h1 className="text-4xl text-royal font-semibold">Good Radio</h1>
+          <h1 className="text-2xl text-royal font-semibold">Good Radio</h1>
         </div>
-        <div className="grid col-span-2 text-l font-semibold">
+        <div className="grid col-span-2">
           <Menu />
         </div>
       </section>
-      <section className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-lg font-medium">
+      <section className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-base font-medium">
         <article className="grid col-span-4 grid-cols-4 gap-x-24">
           <section className="col-span-2">
             <p className="mb-10">

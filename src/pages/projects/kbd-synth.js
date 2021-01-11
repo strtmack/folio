@@ -8,13 +8,13 @@ const KbdSynth = () => {
     <Layout>
       <section className="grid grid-cols-6 gap-x-24 mx-12 p-12">
         <div className="grid col-span-4">
-          <h1 className="text-4xl text-royal font-semibold">Kbd-Synth</h1>
+          <h1 className="text-2xl text-royal font-semibold">Kbd-Synth</h1>
         </div>
-        <div className="grid col-span-2 text-l font-semibold">
+        <div className="grid col-span-2 font-semibold">
           <Menu />
         </div>
       </section>
-      <section className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-lg font-medium">
+      <section className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-base font-medium">
         <article className="grid col-span-4 grid-cols-4 gap-x-24">
           <section className="col-span-2">
             <p className="mb-10">
@@ -32,7 +32,7 @@ const KbdSynth = () => {
             <p className="mb-10">
               I also took the opportunity here to try my hand at the
               'neumorphic' UI style that's gained popularity in the last year or
-              two, utilising drop-shadows and soft edges to simulate 3D,
+              two, utilising drop-shadows and soft edges to simulate a 3D,
               physical interface in a digital environment.
             </p>
           </section>

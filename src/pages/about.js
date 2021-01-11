@@ -25,9 +25,9 @@ const About = () => {
     <Layout>
       <div className="grid grid-cols-6 gap-x-24 mx-12 p-12">
         <div className="grid col-span-4">
-          <h1 className="text-4xl text-royal font-semibold">About</h1>
+          <h1 className="text-2xl text-royal font-semibold">About</h1>
         </div>
-        <div className="grid col-span-2 text-lg font-medium">
+        <div className="grid col-span-2">
           <Menu />
         </div>
       </div>

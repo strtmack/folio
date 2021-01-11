@@ -8,13 +8,13 @@ const Projects = () => {
     <Layout>
       <div className="grid grid-cols-6 gap-x-24 mx-12 p-12">
         <div className="grid col-span-4">
-          <h1 className="text-4xl text-royal font-semibold">Projects</h1>
+          <h1 className="text-2xl text-royal font-semibold">Projects</h1>
         </div>
-        <div className="grid col-span-2 text-lg font-medium">
+        <div className="grid col-span-2">
           <Menu />
         </div>
       </div>
-      <div className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-lg">
+      <div className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-base">
         <div className="col-span-2">
           <p className="font-semibold">
             <Link to="/projects/good-radio" className="sangiovese-line">

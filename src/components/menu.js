@@ -12,7 +12,7 @@ const Menu = () => {
 
   return (
     <React.Fragment>
-      <ul className="text-lg font-semibold">
+      <ul className="text-base font-medium">
         <li>
           <Link to="/" className="nicegreen-line">
             Home
