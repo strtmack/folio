@@ -23,16 +23,16 @@ const About = () => {
 
   return (
     <Layout>
-      <div className="grid grid-cols-6 gap-x-24 mx-12 p-12">
-        <div className="grid col-span-4">
+      <div className="grid lg:grid-cols-6 lg:gap-x-24 lg:mx-12 lg:p-12 p-10 grid-cols-2 gap-y-16">
+        <div className="lg:col-span-4 col-span-2">
           <h1 className="text-2xl text-royal font-semibold">About</h1>
         </div>
-        <div className="grid col-span-2">
+        <div className="col-span-2">
           <Menu />
         </div>
       </div>
-      <div className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-base font-medium">
-        <div className="col-span-3">
+      <div className="grid lg:grid-cols-6 lg:gap-x-24 lg:p-12 lg:mt-20 lg:mx-12 text-base font-medium p-10 grid-cols-2">
+        <div className="lg:col-span-3 col-span-2">
           <p className="mb-6">My name is Stuart Mackinnon.</p>
           <p className="mb-6">
             I'm a software developer based in Melbourne, Australia, who makes
@@ -42,12 +42,12 @@ const About = () => {
             Some of the programming languages, frameworks, and systems I work
             with include:
           </p>
-          <div className="mb-8 grid grid-cols-3 text-royal">
+          <div className="mb-8 grid grid-cols-3 text-royal lg:text-base text-sm gap-x-4">
             <ul>
               <li>HTML5</li>
-              <li>CSS3</li>
+              <li>CSS</li>
               <li>JavaScript</li>
-              <li>Tailwind CSS</li>
+              <li>Tailwind</li>
             </ul>
             <ul>
               <li>React</li>
@@ -68,10 +68,9 @@ const About = () => {
             concepts, knowledge of best practices, problem-solving, curiosity,
             and creativity.
           </p>
-          <p>This website was built with Gatsby, React, and Tailwind CSS.</p>
         </div>
         <div></div>
-        <section className="col-span-2">
+        <section className="col-span-2 mt-6 lg:mt-0">
           <Img
             fixed={data.image.childImageSharp.fixed}
             alt="polaroid"

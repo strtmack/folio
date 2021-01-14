@@ -6,15 +6,15 @@ import Menu from "../components/menu"
 const Projects = () => {
   return (
     <Layout>
-      <div className="grid grid-cols-6 gap-x-24 mx-12 p-12">
-        <div className="grid col-span-4">
+      <div className="grid lg:grid-cols-6 lg:gap-x-24 lg:mx-12 lg:p-12 grid-cols-2 p-10 gap-y-16">
+        <div className="grid lg:col-span-4 col-span-2">
           <h1 className="text-2xl text-royal font-semibold">Projects</h1>
         </div>
         <div className="grid col-span-2">
           <Menu />
         </div>
       </div>
-      <div className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-base">
+      <div className="grid lg:grid-cols-6 lg:gap-x-24 lg:p-12 lg:mt-20 lg:mx-12 text-base p-10 grid-cols-2 gap-y-10 mt-8">
         <div className="col-span-2">
           <p className="font-semibold">
             <Link to="/projects/good-radio" className="sangiovese-line">

@@ -46,22 +46,57 @@ const GoodRadio = () => {
 
   return (
     <Layout>
-      <section className="grid grid-cols-6 gap-x-24 mx-12 p-12">
-        <div className="grid col-span-4">
+      <section className="grid lg:grid-cols-6 lg:gap-x-24 lg:mx-12 lg:p-12 grid-cols-2 p-10 gap-y-16">
+        <div className="lg:col-span-4 col-span-2">
           <h1 className="text-2xl text-royal font-semibold">Good Radio</h1>
         </div>
-        <div className="grid col-span-2">
+        <div className="col-span-2">
           <Menu />
         </div>
       </section>
-      <section className="project-list grid grid-cols-6 gap-x-24 p-12 mt-20 mx-12 text-base font-medium">
-        <article className="grid col-span-4 grid-cols-4 gap-x-24">
+      <section className="grid lg:grid-cols-6 lg:gap-x-24 lg:p-12 lg:mt-20 lg:mx-12 text-base font-medium grid-cols-2 gap-y-10 p-10 mt-8">
+        <div className="col-span-2 lg:mb-12 lg:hidden">
+          <Img fluid={appData.icon.childImageSharp.fluid} alt="app-icon" />
+        </div>
+        <div className="lg:hidden col-span-2">
+          <ul>
+            <li className="mb-4">
+              Programming Languages: <br />
+              <span className="text-darkgrey">React Native, JavaScript</span>
+            </li>
+            <li className="mb-4">
+              Toolkit: <br />
+              <span className="text-darkgrey">Expo, Android Studio</span>
+            </li>
+            <li>
+              Links: <br />
+              <a
+                className="text-darkgrey mustard-line"
+                href="https://github.com/stuart-mack/good-radio"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                GitHub
+              </a>{" "}
+              <br />
+              <a
+                className="text-darkgrey mustard-line"
+                href="https://expo.io/@mackavelli/projects/drift"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Expo
+              </a>
+            </li>
+          </ul>
+        </div>
+        <article className="grid lg:col-span-4 lg:grid-cols-4 lg:gap-x-24 col-span-2 grid-cols-2 gap-y-10">
           <section className="col-span-2">
-            <p className="mb-10">
+            <p className="lg:mb-10 mb-6">
               Good Radio is a mobile app for listening to online radio, from a
               small, curated selection of independent, music-focused stations.
             </p>
-            <p className="mb-12">
+            <p className="lg:mb-12">
               The idea for the app was fairly simple. I listen to a lot of
               online radio, and my problem was that I didn't necessarily want to
               have to install a standalone app on my phone for every station
@@ -70,27 +105,27 @@ const GoodRadio = () => {
               phone), or an app at all, for that matter.
             </p>
           </section>
-          <div className="col-span-2 mb-12">
+          <div className="col-span-2 lg:mb-12 lg:grid hidden">
             <Img fluid={appData.icon.childImageSharp.fluid} alt="app-icon" />
           </div>
-          <div className="col-span-2 mb-12 flex justify-start">
+          <div className="col-span-2 lg:mb-12 flex justify-start">
             <video controls>
               <source src={GoodRadioRec} type="video/mp4" />
             </video>
           </div>
           <section className="col-span-2">
-            <p className="mb-10">
+            <p className="lg:mb-10 mb-6">
               Upon doing some research, I discovered a couple of existing
               'online radio aggregration' type apps, but found that they were
               packed with an overwhelming amount of (largely commercial)
               stations, as well as being pretty awful to use due to the amount
               of ads plastered all over the place.
             </p>
-            <p className="mb-10">
+            <p className="lg:mb-10 mb-6">
               I wanted something much smaller in scope, more curated, and with a
               clean, simple user interface.
             </p>
-            <p className="mb-12">
+            <p className="lg:mb-12">
               And so Good Radio was born. I decided to use Expo as a framework
               to take care of the build/deployment nitty gritty so that I could
               focus on getting used to React Native syntax and the design and
@@ -98,14 +133,14 @@ const GoodRadio = () => {
             </p>
           </section>
           <section className="col-span-2">
-            <p className="mb-10">
+            <p className="lg:mb-10 mb-6">
               In terms of learning experience, probably the most valuable part
               of building Good Radio was diving deeper into asynchronous
               JavaScript functions, which I used to handle loading/mounting of
               the audio player and selected audio stream, and utilising the
               await keyword for greater control over said functions.
             </p>
-            <p className="mb-12">
+            <p className="lg:mb-12">
               Good Radio is currently fully functional on Android, with an iOS
               version basically dependent on some updates to Expo's Audio API.
               If you have an Android phone with the Expo app installed, you can
@@ -127,7 +162,7 @@ const GoodRadio = () => {
             />
           </div>
         </article>
-        <div className="col-span-2">
+        <div className="col-span-2 lg:grid hidden">
           <ul>
             <li className="mb-4">
               Programming Languages: <br />
