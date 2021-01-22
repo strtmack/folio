@@ -79,7 +79,7 @@ const About = () => {
           <ul>
             <li>
               <a
-                className="mustard-line"
+                className="royal-line"
                 href="https://github.com/strtmack"
                 rel="noreferrer noopener"
                 target="_blank"
@@ -89,7 +89,7 @@ const About = () => {
             </li>
             <li>
               <a
-                className="mustard-line"
+                className="royal-line"
                 href="mailto:strtmack@gmail.com"
                 rel="noreferrer noopener"
                 target="_blank"

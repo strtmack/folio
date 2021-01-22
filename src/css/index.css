@@ -8,24 +8,64 @@
 }
 
 @layer utilities {
+  .mustard-line {
+    text-decoration: none;
+    background-image: linear-gradient(#faf6eb, #faf6eb),
+      linear-gradient(#f3be22, #f3be22);
+    background-size: 100% 1px, 100% 1px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat, no-repeat;
+    transition: background-size 0.3s linear;
+    transition-delay: 0.1s;
+  }
+
   .mustard-line:hover {
-    text-decoration: underline;
-    text-decoration-color: #f3be22;
+    background-size: 0 1px, 100% 1px;
+  }
+
+  .nicegreen-line {
+    text-decoration: none;
+    background-image: linear-gradient(#faf6eb, #faf6eb),
+      linear-gradient(#019563, #019563);
+    background-size: 100% 1px, 100% 1px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat, no-repeat;
+    transition: background-size 0.3s linear;
+    transition-delay: 0.1s;
   }
 
   .nicegreen-line:hover {
-    text-decoration: underline;
-    text-decoration-color: #019563;
+    background-size: 0 1px, 100% 1px;
+  }
+
+  .royal-line {
+    text-decoration: none;
+    background-image: linear-gradient(#faf6eb, #faf6eb),
+      linear-gradient(#5267ab, #5267ab);
+    background-size: 100% 1px, 100% 1px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat, no-repeat;
+    transition: background-size 0.3s linear;
+    transition-delay: 0.1s;
   }
 
   .royal-line:hover {
-    text-decoration: underline;
-    text-decoration-color: #5267ab;
+    background-size: 0 1px, 100% 1px;
+  }
+
+  .sangiovese-line {
+    text-decoration: none;
+    background-image: linear-gradient(#faf6eb, #faf6eb),
+      linear-gradient(#ee4e2c, #ee4e2c);
+    background-size: 100% 1px, 100% 1px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat, no-repeat;
+    transition: background-size 0.3s linear;
+    transition-delay: 0.1s;
   }
 
   .sangiovese-line:hover {
-    text-decoration: underline;
-    text-decoration-color: #ee4e2c;
+    background-size: 0 1px, 100% 1px;
   }
 
   .fade-in {
