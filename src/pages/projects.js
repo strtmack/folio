@@ -27,6 +27,16 @@ const Projects = () => {
         </div>
         <div className="col-span-2">
           <p className="font-semibold">
+            <Link to="/projects/chirpy" className="sangiovese-line">
+              Chirpy
+            </Link>
+          </p>
+          <p className="text-darkgrey font-medium">
+            A front end clone of a popular social media app
+          </p>
+        </div>
+        <div className="col-span-2">
+          <p className="font-semibold">
             <Link to="/projects/kbd-synth" className="sangiovese-line">
               Kbd-Synth
             </Link>
