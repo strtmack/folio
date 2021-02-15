@@ -2,6 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Menu from "../components/menu"
+import gradient from "../img/ambient-scrn-2.png"
+import radio from "../img/icon.png"
+import kbd from "../img/kbd-square.png"
+import chirpy from "../img/chirpy-square.png"
 
 const Projects = () => {
   return (
@@ -15,8 +19,15 @@ const Projects = () => {
         </div>
       </div>
       <div className="grid lg:grid-cols-6 lg:gap-x-24 lg:p-12 lg:mt-20 lg:mx-12 text-base p-10 grid-cols-2 gap-y-10 mt-8">
-        <div className="col-span-2">
+        <div className="col-span-2 mb-6">
           <p className="font-semibold">
+            <img
+              src={radio}
+              alt="good-radio-icon"
+              width="200"
+              className="mb-6"
+            />
+
             <Link to="/projects/good-radio" className="sangiovese-line">
               Good Radio
             </Link>
@@ -25,24 +36,56 @@ const Projects = () => {
             An online radio mobile app built with Expo/React Native
           </p>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 mb-6">
+          <img
+            src={gradient}
+            alt="ambient-contemporary-homepage-screenshot"
+            width="200"
+            className="mb-6"
+          />
+
           <p className="font-semibold">
-            <Link to="/projects/chirpy" className="sangiovese-line">
-              Chirpy
+            <Link
+              to="/projects/ambient-contemporary"
+              className="sangiovese-line"
+            >
+              Ambient Contemporary
             </Link>
           </p>
           <p className="text-darkgrey font-medium">
-            A front end clone of a popular social media app
+            An internet music library of ambient and experimental obscurities
           </p>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 mb-6">
           <p className="font-semibold">
+            <img
+              src={kbd}
+              alt="ambient-contemporary-homepage-screenshot"
+              width="200"
+              className="mb-6"
+            />
             <Link to="/projects/kbd-synth" className="sangiovese-line">
               Kbd-Synth
             </Link>
           </p>
           <p className="text-darkgrey font-medium">
             A granular piano synth for your browser
+          </p>
+        </div>
+        <div className="col-span-2 mb-6">
+          <p className="font-semibold">
+            <img
+              src={chirpy}
+              alt="chirpy-screenshot"
+              width="200"
+              className="mb-6"
+            />
+            <Link to="/projects/chirpy" className="sangiovese-line">
+              Chirpy
+            </Link>
+          </p>
+          <p className="text-darkgrey font-medium">
+            A front end clone of a popular social media app
           </p>
         </div>
       </div>

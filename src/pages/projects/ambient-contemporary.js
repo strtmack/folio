@@ -1,15 +1,17 @@
 import React from "react"
 import Layout from "../../components/layout"
 import Menu from "../../components/menu"
-import chirpy1 from "../../img/chirpy-screen-1.png"
-import chirpy2 from "../../img/chirpy-screen-2.png"
+import ambient from "../../img/ambient-scrn.png"
+import gradient from "../../img/ambient-scrn-2.png"
 
-const Chirpy = () => {
+const Ambient = () => {
   return (
     <Layout>
       <section className="grid lg:grid-cols-6 lg:gap-x-24 lg:mx-12 lg:p-12 grid-cols-2 p-10 gap-y-16">
         <div className="lg:col-span-4 col-span-2">
-          <h1 className="text-2xl text-royal font-semibold">Chirpy</h1>
+          <h1 className="text-2xl text-royal font-semibold">
+            Ambient Contemporary
+          </h1>
         </div>
         <div className="col-span-2">
           <Menu />
@@ -17,7 +19,7 @@ const Chirpy = () => {
       </section>
       <section className="grid lg:grid-cols-6 lg:gap-x-24 lg:p-12 lg:mt-20 lg:mx-12 text-base font-medium grid-cols-2 gap-y-10 p-10 mt-8">
         <section className="col-span-2 lg:hidden">
-          <img src={chirpy1} alt="chirpy-screenshot" />
+          <img src={ambient} alt="ambient-contemporary homepage screenshot" />
         </section>
         <div className="col-span-2 lg:hidden">
           <ul>
@@ -28,14 +30,14 @@ const Chirpy = () => {
             <li className="mb-4">
               Toolkit: <br />
               <span className="text-darkgrey">
-                Firebase, Material UI, Create React App, react-twitter-embed
+                Create React App, Material UI, Framer Motion, Easybase
               </span>
             </li>
             <li>
               Links: <br />
               <a
                 className="text-darkgrey mustard-line"
-                href="https://github.com/strtmack/chirpy"
+                href="https://github.com/strtmack/ambient-contemporary"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -44,7 +46,7 @@ const Chirpy = () => {
               <br />
               <a
                 className="text-darkgrey mustard-line"
-                href="https://strtmack.github.io/chirpy/"
+                href="https://strtmack.github.io/ambient-contemporary/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -56,32 +58,35 @@ const Chirpy = () => {
         <article className="grid lg:col-span-4 lg:grid-cols-4 lg:gap-x-24 col-span-2 grid-cols-2 gap-y-10">
           <section className="col-span-2">
             <p className="lg:mb-10 mb-6">
-              Chirpy is a front end/UI clone of a certain popular social media
-              app. Just a little bit of practice working with React components
-              and accurately styling to a reference. This was also a chance for
-              me to dip my toes into databasing with Firebase/Firestore, with
-              posts ('chirps') being stored and pulled from Firestore documents.
+              Ambient Contemporary is a proof of concept for a music
+              library/streaming microsite. The library data and files are served
+              by a database on Easybase (a very simple, lightweight alternative
+              to, say, AWS Amplify or even Firebase).
+            </p>
+            <p className="lg:mb-10 mb-6">
+              The floaty gradient shapes are canvas animations. I've been
+              experimenting and learning the basics of drawing and animation
+              with canvas as a lot of the best-looking sites I see tend to
+              utilise this element in one way or another.
             </p>
           </section>
           <section className="col-span-2 lg:grid hidden">
-            <img src={chirpy1} alt="chirpy-screenshot" />
+            <img src={ambient} alt="ambient-contemporary homepage screenshot" />
           </section>
           <section className="col-span-2 lg:hidden">
-            <img src={chirpy2} alt="chirpy-screenshot" />
+            <img src={gradient} alt="ambient-gradient" />
           </section>
           <section className="col-span-2 lg:grid hidden">
-            <img src={chirpy2} alt="chirpy-screenshot-2" />
+            <img src={gradient} alt="ambient-gradient" />
           </section>
           <section className="col-span-2">
             <p className="lg:mb-10 mb-6">
-              In terms of functionality, Chirpy is very much a work in progress.
-              Right now, it's a front end clone and that's about it, although
-              you can type a message and/or paste an image URL into the 'Chirp'
-              form and post it to the timeline. There's also a widget component
-              with embedded live feed from Twitter (you might have heard of this
-              totally unrelated app). Planned features to add are user
-              authentication/login, image upload (as opposed to image linking),
-              responsiveness/media queries, and more.
+              The music found on this web app is an assortment of my own demos
+              and experiments that were lying around on my hard drive. Some of
+              them were produced for a series of short films but were never
+              used, some were just experiments with new pieces of equipment or
+              software, and now they live here in a little corner of the
+              internet.
             </p>
           </section>
         </article>
@@ -94,15 +99,14 @@ const Chirpy = () => {
             <li className="mb-4">
               Toolkit: <br />
               <span className="text-darkgrey">
-                Material UI, Create React App, react-twitter-embed,
-                react-flip-move
+                Create React App, Material UI, Framer Motion, Easybase
               </span>
             </li>
             <li>
               Links: <br />
               <a
                 className="text-darkgrey mustard-line"
-                href="https://github.com/strtmack/chirpy"
+                href="https://github.com/strtmack/ambient-contemporary"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -111,7 +115,7 @@ const Chirpy = () => {
               <br />
               <a
                 className="text-darkgrey mustard-line"
-                href="https://strtmack.github.io/chirpy/"
+                href="https://strtmack.github.io/ambient-contemporary/"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -125,4 +129,4 @@ const Chirpy = () => {
   )
 }
 
-export default Chirpy
+export default Ambient
